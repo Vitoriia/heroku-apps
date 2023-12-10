@@ -1,0 +1,38 @@
+{
+  "name": "nodecourse",
+  "version": "1.0.0",
+  "description": "Show how to build apps with node.js",
+  "main": "fibonacci.js",
+  "scripts": {
+    "start": "node hosted-server.js",
+    "say-hello": "node ./hello-world.js",
+    "fib": "node ./fibonacci.js",
+    "both": "npm run say-hello && npm run fib",
+    "create-file": "mkdir src && touch src/my-file.txt && echo 'Text!' > src/my-file.txt"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "keywords": [
+    "fibonacci"
+  ],
+  "author": "V Chvykova",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2",
+    "colorful-log-chvyk": "^1.1.0",
+    "express": "^4.18.2",
+    "koa": "^2.14.2",
+    "mongodb": "^6.3.0",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.3",
+    "nodemon": "^3.0.1"
+  }
+}
